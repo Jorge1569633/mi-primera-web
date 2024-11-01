@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Primera Web</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html"><i class="fa-brands fa-whatsapp"></i></a>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca">Acerca de mí</a></li>
+          <li><a href="trabajos">Trabajos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#Contactos">Contacto</a></li>
+          <li><a href="formulario.html">Ingresa</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="seccion-principal">
+      <section class="seccion">
+        <div class="logo-container">
+          <img src="img/vp2dsmm3.png" alt="hfm" class="logo">
+        </div>
+        <div class="acerca de">
+          <h2>De qué se trata</h2>
+          <p>Bienvenido a mi web</p>
+          <p>Aquí podrás aprender más sobre el tema que selecciones</p> 
+        </div>
+      </section>
+      <section class="seccion video-section">
+        <!-- Video principal que se reproduce al hacer clic -->
+        <video id="miVideo" src="video/video0.mp4" controls loop></video>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Síguenos en</h3>
+      <nav>
+        <a href="index.html"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+        <a href="index.html"><i class="fa-brands fa-facebook"></i></a>
+        <a href="index.html"><i class="fa-brands fa-tiktok"></i></a>
+      </nav>
+      <p>Estamos en redes</p>
+      <button id="btn-generar">Tu frase para el día de hoy es</button>
+      <p id="frase"></p>
+
+      <!-- Video de frase del día -->
+      <video id="fraseVideo" controls></video>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

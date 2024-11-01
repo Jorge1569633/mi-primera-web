@@ -1,0 +1,136 @@
+/* Configuración general del formulario */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* Contenedor del encabezado */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra todo dentro del header, incluyendo logo y menú */
+  text-align: center;
+}
+
+
+.form_contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+/* Contenedor del logo */
+.logo-container {
+  display: flex;
+  justify-content: center; /* Centra el logo horizontalmente */
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 0; /* Espacio alrededor del logo */
+}
+
+/* Logo específico */
+.logo-container img {
+  width: 300px; /* Ajusta este valor para cambiar el tamaño */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-width: 100%;
+}
+
+
+
+form {
+  width: 100%;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+
+/* Menú hamburguesa */
+nav ul {
+  display: flex;
+  justify-content: center; /* Centra los elementos del menú */
+}
+nav ul li {
+  text-align: center;
+}
+
+
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #004a99;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #f61010;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  form {
+      padding: 15px;
+  }
+
+  label {
+      font-size: 0.9em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+      font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  h2.titulo_seccion {
+      font-size: 1.5em;
+      text-align: center;
+  }
+  
+  button[type="submit"] {
+      padding: 8px;
+      font-size: 0.9em;
+  }
+}
